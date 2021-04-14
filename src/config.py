@@ -6,7 +6,7 @@ TRAINING_FILES = [
     "input/processed/customer_churn.csv"
 ]
 
-INFERENCE_MODEL = "models/run__2021_04_12_16_43/churn_decision-tree-gini_None_random-os_0.bin"
+INFERENCE_MODEL = "models/voting/churn_vote-ensemble_random_random-us_4.bin"
 
 FEATURES = [
     # "InternetService_No",
