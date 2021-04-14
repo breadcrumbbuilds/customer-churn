@@ -10,6 +10,8 @@ import argparse
 from sklearn.model_selection import train_test_split
 from sklearn.metrics import plot_confusion_matrix
 
+from dispatchers import normalize_dispatcher
+
 def run(fold):
     for file in config.TRAINING_FILES:
         df = pd.read_csv(file)
@@ -22,9 +24,12 @@ def run(fold):
         x_train = df_train.drop("target", axis=1).values
         y_train = df_train.target.values
 
+
         x_valid = df_valid.drop("target", axis=1).values
         y_valid = df_valid.target.values
 
+        scaler = normalize_dispatcher.normalize["standardize"]
+        x_valid = scaler.fit_transform(x_valid)
 
         clf = joblib.load(config.INFERENCE_MODEL)
 
