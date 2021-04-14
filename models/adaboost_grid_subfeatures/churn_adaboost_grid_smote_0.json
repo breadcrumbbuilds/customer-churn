@@ -1,0 +1,19 @@
+{
+    "model-file": "churn_adaboost_grid_smote_0.bin",
+    "training-file": "input/processed/customer_churn.csv",
+    "model-dispatch": "adaboost",
+    "params": {
+        "algorithm": "SAMME.R",
+        "base_estimator": null,
+        "learning_rate": 1,
+        "n_estimators": 10000,
+        "random_state": null
+    },
+    "normalization-dispatch": "standardize",
+    "data-manip-dispatch": "smote",
+    "grid-dispatch": "grid",
+    "time-to-fit (s)": 251.81560802459717,
+    "time-to-predict (s)": 2.2438454627990723,
+    "fold": 0,
+    "f1": 0.5755053507728894
+}

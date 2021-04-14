@@ -1,0 +1,33 @@
+{
+    "model-file": "churn_rf_grid_smote_2.bin",
+    "training-file": "input/processed/customer_churn.csv",
+    "model-dispatch": "rf",
+    "params": {
+        "bootstrap": true,
+        "ccp_alpha": 0.0,
+        "class_weight": null,
+        "criterion": "gini",
+        "max_depth": 12,
+        "max_features": "auto",
+        "max_leaf_nodes": null,
+        "max_samples": null,
+        "min_impurity_decrease": 0.0,
+        "min_impurity_split": null,
+        "min_samples_leaf": 1,
+        "min_samples_split": 2,
+        "min_weight_fraction_leaf": 0.0,
+        "n_estimators": 500,
+        "n_jobs": -1,
+        "oob_score": false,
+        "random_state": null,
+        "verbose": 0,
+        "warm_start": false
+    },
+    "normalization-dispatch": "standardize",
+    "data-manip-dispatch": "smote",
+    "grid-dispatch": "grid",
+    "time-to-fit (s)": 192.58523225784302,
+    "time-to-predict (s)": 1.2528154850006104,
+    "fold": 2,
+    "f1": 0.6261089987325729
+}

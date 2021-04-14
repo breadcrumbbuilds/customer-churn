@@ -1,0 +1,40 @@
+{
+    "model-file": "churn_mlp_grid_random-us_0.bin",
+    "training-file": "input/processed/customer_churn.csv",
+    "model-dispatch": "mlp",
+    "params": {
+        "activation": "relu",
+        "alpha": 0.0001,
+        "batch_size": 64,
+        "beta_1": 0.9,
+        "beta_2": 0.999,
+        "early_stopping": false,
+        "epsilon": 1e-08,
+        "hidden_layer_sizes": [
+            1000,
+            1000
+        ],
+        "learning_rate": "adaptive",
+        "learning_rate_init": 0.01,
+        "max_fun": 15000,
+        "max_iter": 1000,
+        "momentum": 0.9,
+        "n_iter_no_change": 10,
+        "nesterovs_momentum": true,
+        "power_t": 0.5,
+        "random_state": 42,
+        "shuffle": true,
+        "solver": "sgd",
+        "tol": 0.0001,
+        "validation_fraction": 0.1,
+        "verbose": 10,
+        "warm_start": false
+    },
+    "normalization-dispatch": "standardize",
+    "data-manip-dispatch": "random-us",
+    "grid-dispatch": "grid",
+    "time-to-fit (s)": 5393.679162502289,
+    "time-to-predict (s)": 0.04566335678100586,
+    "fold": 0,
+    "f1": 0.6142557651991614
+}

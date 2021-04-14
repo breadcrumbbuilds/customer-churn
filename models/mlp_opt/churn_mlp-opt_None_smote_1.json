@@ -1,0 +1,40 @@
+{
+    "model-file": "churn_mlp-opt_None_smote_1.bin",
+    "training-file": "input/processed/customer_churn.csv",
+    "model-dispatch": "mlp-opt",
+    "params": {
+        "activation": "relu",
+        "alpha": 0.0001,
+        "batch_size": 64,
+        "beta_1": 0.9,
+        "beta_2": 0.999,
+        "early_stopping": false,
+        "epsilon": 1e-08,
+        "hidden_layer_sizes": [
+            1000,
+            1000
+        ],
+        "learning_rate": "adaptive",
+        "learning_rate_init": 0.001,
+        "max_fun": 15000,
+        "max_iter": 200,
+        "momentum": 0.9,
+        "n_iter_no_change": 20,
+        "nesterovs_momentum": true,
+        "power_t": 0.5,
+        "random_state": null,
+        "shuffle": true,
+        "solver": "adam",
+        "tol": 0.0001,
+        "validation_fraction": 0.1,
+        "verbose": false,
+        "warm_start": false
+    },
+    "normalization-dispatch": "standardize",
+    "data-manip-dispatch": "smote",
+    "grid-dispatch": null,
+    "time-to-fit (s)": 1299.7132399082184,
+    "time-to-predict (s)": 0.041695356369018555,
+    "fold": 1,
+    "f1": 0.49145860709592637
+}
