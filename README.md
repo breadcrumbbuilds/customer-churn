@@ -53,6 +53,8 @@ The following commands are optional
 - `normalize` is used to scale the data
 - `subfeatures` provides functionality for training a model on a subset of the features. Will use the config.FEATURES. If this command isn't used, all the features in the csv file in TRAINING_FILE will be used
 
+The resulting model will be persisted to the /models folder. You can use the path to the model in the config.INFERENCE_MODEL to do other cool things in this repo like create a confusion matrix!
+
 ## Dispatchers
 
 The repo uses a 'dispatching' framework that supports dynamic instantiation of different third party classes. The goal is to create an append only file that contains arbitrary complexity, however, there are drawbacks to this strategy, namely, the duplication of objects.
