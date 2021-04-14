@@ -12,9 +12,7 @@ This project aims to show a student how to interact with data, formalize a plan 
 
 Much of the project structure derives from Abishek Thakur's book, [Approaching Almost Any Machine Learning Problem](https://github.com/abhishekkrthakur/approachingalmost).
 
-Much of the functionality of the repo's code can be interacted with through the command line. The goal is to create an append-only, reusable codebase that can be applied to arbitrary use-cases. However, there are dependencies
-
-A note: Run scripts from the root of the project
+The repo's code can be interacted with through the command line. The goal is to create an append-only, reusable codebase that can be applied to arbitrary use-cases. However, there are dependencies.
 
 ## Dependencies
 
@@ -26,6 +24,9 @@ There is a requirements.txt file that to the best of my knowledge contains the r
 - numpy
 
 ## Training
+
+A note: Run scripts from the root of the project
+
 
 This repo supports training a model from the command line at the root of the project. There is also funcitonality to execute several scripts. Examples of these scripts can be found in the [src/bash](src/bash) folder
 Training a model comes with several options. The general command structure for training a model:
