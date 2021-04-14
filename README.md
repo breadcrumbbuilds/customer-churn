@@ -16,6 +16,15 @@ Much of the functionality of the repo's code can be interacted with through the 
 
 A note: Run scripts from the root of the project
 
+## Dependencies
+
+There is a requirements.txt file that to the best of my knowledge contains the requirements for training in this repository. The packages of note include:
+- Scikit-learn
+- imbalanced-learn
+- joblib
+- matplotlib
+- numpy
+
 ## Training
 
 This repo supports training a model from the command line at the root of the project. There is also funcitonality to execute several scripts. Examples of these scripts can be found in the [src/bash](src/bash) folder
