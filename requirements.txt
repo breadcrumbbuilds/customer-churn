@@ -1,0 +1,14 @@
+# This file may be used to create an environment using:
+# $ conda create --name <env> --file <this file>
+# platform: osx-64
+imbalanced-learn=0.8.0
+joblib=1.0.1
+matplotlib=3.4.1
+ncurses=6.2
+numpy=1.20.2
+pandas=1.2.3
+pillow=8.2.0
+pip=21.0.1
+python=3.9.2
+scikit-learn=0.24.1
+scipy=1.6.2
